@@ -1,0 +1,250 @@
+/* Formatação genérica */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F6F6F4;
+}
+
+a{
+    transition: .3s background;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.button-default{
+    text-align: center;
+    font-size: 1.3em;
+    display: block;
+    color:white;
+    background-color: #51B9C7;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1em;
+    width: 7em;
+    margin:auto;
+
+}
+.button-default:hover{
+    background-color: #018ccc;
+}
+
+.ever-block{
+    display: block;
+}
+
+/* Formatação Cabeçalho */
+.main-header{
+    padding: 0;
+}
+.main-header .div-logo{
+    text-align: center;
+}
+.main-header .div-logo h1{
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+.main-header .div-logo img{
+    margin-left: 3em;
+}
+
+.main-header nav{
+    background-color: #612975;
+}
+
+.main-ul{
+    padding: 0;
+}
+.main-ul li{
+    list-style: none;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 ;
+    font-weight: normal;
+}
+.main-ul a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    padding: .8em 0;
+    /* transition: .4s background;    */
+}
+.main-ul a:hover{
+    background-color: #985fad;
+}
+
+/* Formatação do article */
+
+.main-main article{
+    color:#612975;
+    text-align: center;
+    
+}
+
+.main-main h2{
+    margin: 1em 0 1.3em;
+}
+.main-main h3{
+    color:#612975;
+    text-align: center;
+}
+
+.col{
+    display: block;
+    text-align: center;
+    margin: 3em 0;
+}
+
+.ever-block{
+    margin: 2em 1em;
+}
+.ever-block h3{
+    text-align: left;
+    font-weight: normal;
+}
+
+/* footer */
+
+footer{
+    border-top: 1px solid transparent;
+    text-align: center;
+    background-color: #303D4F;
+    color:lightgray;
+    margin-top: 1em;
+}
+footer p{
+    margin: 0 auto;
+}
+footer h3{
+    margin: 1em 0;
+}
+
+@media screen and (min-width: 700px) {
+    .col{
+        display: inline-block;
+        width: 49%;
+        /* margin-left: 1em; */
+    }
+
+    .main-header{
+        margin-bottom: 3em;
+    }
+    .main-header .div-logo{
+        display: inline-block;
+        
+    }
+
+    .main-header nav{
+        float: right;
+        margin-top:1.3em;
+        display: block;
+        background-color: inherit;
+    }
+
+    .main-header .main-ul{
+        display: inline-block;
+        margin:0;
+    }
+
+    .main-ul li{
+        display: inline-block;
+        
+    }
+    .main-ul li a{
+        color: #612975;
+        padding: .5em;
+        font-weight: bold;
+    }
+
+    .main-main article{
+        background-color: #612975;
+        color: white;
+        padding: 2em;
+        text-align: center;
+        background-image: url("../images/bg_topo_1198x670.jpg");
+    }
+
+    .main-main article:before{
+        display: block;
+        content: url("../images/icon_play.svg");
+        width: 5em;
+        margin:auto;
+    }
+    
+
+    .ever-block{
+        margin: 2em 1em;
+        width: 50%;
+    }
+    
+
+}
+@media screen and (min-width: 1024px) {
+    .main-main article{
+        text-align: center;
+        font-size: 1.2em;
+        box-sizing: border-box;
+        background-image: url("../images/bg_topo_1600x1374.jpg");
+        background-position: center -7em;
+        background-size:cover;
+        height: 25em;
+        /* padding: 0 4em;   */
+    }
+
+    .main-main article p{
+        display: block;
+        width: 80%;
+        text-align: center;
+        margin: 2em auto;
+    }
+    /* .button-big{
+        
+        font-size: .7em;
+        width: 7em;
+        margin:auto;
+    
+    } */
+
+    .main-main article:before{
+        margin-top: 5em;
+        width: 3em;
+    }
+    .col{
+        display: inline-block;
+        width: 33%;
+        /* margin-left: 1em; */
+    }
+    
+    .ever-block{
+        margin: 2em 1em;
+        width: 33%;
+    }
+
+}
+
+@media screen and (min-width: 1050px) {
+    .col{
+        display: inline-block;
+        width: 24%;
+        /* margin-left: 1em; */
+    }
+
+    .ever-block{
+        display: inline-block;
+        margin: 1em 3em;
+        width: 40%;
+        text-align: left !important;
+    }
+    
+
+    
+
+}
+
